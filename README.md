@@ -25,6 +25,7 @@ If you run into issues, DM me on discord.
 
 Mockup: https://cdn.discordapp.com/attachments/546208188123447296/762900241770479616/unknown.png
 
+Example: https://ks30i.csb.app/ 
 ## Project setup
 ```
 yarn install
