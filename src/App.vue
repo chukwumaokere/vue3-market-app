@@ -36,9 +36,11 @@ export default {
 .chucks-grid {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  /* grid-template-columns: auto auto auto auto;*/
+  /* column-gap: 1rem;*/
+  margin-bottom: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   column-gap: 1rem;
   row-gap: 1rem;
-  margin-bottom: 3rem;
 }
 </style>
