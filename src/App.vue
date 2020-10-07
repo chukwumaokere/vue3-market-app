@@ -39,5 +39,6 @@ export default {
   grid-template-columns: auto auto auto auto;
   column-gap: 1rem;
   row-gap: 1rem;
+  margin-bottom: 3rem;
 }
 </style>
