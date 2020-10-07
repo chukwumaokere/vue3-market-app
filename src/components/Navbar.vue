@@ -12,7 +12,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#"><Logo />Chucks's Store</a>
+      <a class="navbar-brand" href="#"><Logo /> &nbsp; Chucks's Store</a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
