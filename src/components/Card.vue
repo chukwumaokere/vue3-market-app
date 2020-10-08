@@ -42,26 +42,8 @@ export default {
     let ratingValue = props.rating ? props.rating : "N/A";
     let quantity = ref("");
     quantity.value = 0;
-    /*
-    const increase = () => {
-      //console.log(this);
-      //this.$emit("update", -Math.abs(props.price));
-      emit("update", -Math.abs(props.price));
-      quantity.value++;
-    }
-    */
-   /*
-    function decrease() {
-      if (quantity.value > 0) {
-        //this.$emit("update", props.price);
-        quantity.value--;
-      }
-    }
-    */
     return {
       quantity,
-      //increase,
-      //decrease,
       displayPrice: props.price ? props.price.toFixed(2) : "0.00",
       ratingValue,
     };
@@ -76,7 +58,7 @@ export default {
         this.$emit("update-wallet", this.$props.price);
         this.quantity--;
       }
-    }
+    },
   },
 };
 </script>
