@@ -38,28 +38,45 @@ export default {
     price: Number,
   },
 
-  setup(props) {
+  setup(props, { emit }) {
     let ratingValue = props.rating ? props.rating : "N/A";
     let quantity = ref("");
-
     quantity.value = 0;
+    /*
     const increase = () => {
-      //this.$emit('subtract-from-wallet', props.price )
+      //console.log(this);
+      //this.$emit("update", -Math.abs(props.price));
+      emit("update", -Math.abs(props.price));
       quantity.value++;
-    };
-    const decrease = () => {
+    }
+    */
+   /*
+    function decrease() {
       if (quantity.value > 0) {
-        //this.$emit('add-to-wallet', props.price )
+        //this.$emit("update", props.price);
         quantity.value--;
       }
-    };
+    }
+    */
     return {
       quantity,
-      increase,
-      decrease,
+      //increase,
+      //decrease,
       displayPrice: props.price ? props.price.toFixed(2) : "0.00",
       ratingValue,
     };
+  },
+  methods: {
+    increase() {
+      this.quantity++;
+      this.$emit("update-wallet", -Math.abs(this.$props.price));
+    },
+    decrease() {
+      if (this.quantity > 0) {
+        this.$emit("update-wallet", this.$props.price);
+        this.quantity--;
+      }
+    }
   },
 };
 </script>

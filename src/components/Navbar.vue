@@ -26,7 +26,8 @@
       <div class="float-right">
         <Button text="Checkout" className="btn btn-danger" />
         &nbsp;
-        <Wallet />
+        <!-- JUST TESTING REF VALUE <p> {{ amt }} </p> -->
+        <Wallet :amount="amt" />
       </div>
     </Container>
   </nav>
@@ -38,6 +39,9 @@ import Button from "./Button";
 import Container from "./Container";
 import Wallet from "./Wallet";
 export default {
+  props: {
+    amt: Number,
+  },
   components: {
     Logo,
     Button,
