@@ -1,5 +1,5 @@
 <template>
-  <div class="card" style="width: 18rem">
+  <div class="card" :class="{ cardpicked: quantity > 0 }" style="width: 18rem">
     <img
       class="card-img-top"
       src="https://www.flaticon.com/svg/static/icons/svg/1377/1377194.svg"
@@ -66,5 +66,10 @@ export default {
 <style>
 .card {
   width: 100% !important;
+}
+
+.cardpicked {
+  border-color: green;
+  border-width: thick;
 }
 </style>
