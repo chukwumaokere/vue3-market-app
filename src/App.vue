@@ -28,9 +28,10 @@ export default {
     Container,
   },
   setup() {
+    //console.log('foods is', foods.default);
     const walletAmount = ref(50);
     return {
-      foods,
+      foods: foods.default,
       walletAmount,
     };
   },

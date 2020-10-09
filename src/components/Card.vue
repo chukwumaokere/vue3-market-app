@@ -38,7 +38,7 @@ export default {
     price: Number,
   },
 
-  setup(props, { emit }) {
+  setup(props) {
     let ratingValue = props.rating ? props.rating : "N/A";
     let quantity = ref("");
     quantity.value = 0;
